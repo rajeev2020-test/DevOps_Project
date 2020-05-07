@@ -20,7 +20,7 @@ pipeline {
             steps {
                 timeout(time: 3, unit: 'MINUTES') {
                     retry(5) {
-                        sh echo "Pipeline in Deploy" >> /tmp/pipeline
+                        sh echo Pipeline in Deploy >> /tmp/pipeline
                     }
                 }
             }
